@@ -25,86 +25,73 @@ struct verseByVerseView: View {
     @StateObject var vm = CodableViewModel()
     
     var body: some View {
+        
         NavigationStack{
             TabView(selection: $pageNumber){
                 ForEach(1..<605) { index in
                     let quranPageV2 = vm.pagesV2[index-1]
                     
-                    //// if on appear && on disappear on the same time
-                    ///
-                    ///
-                    ///
-                    ///
-                    
-                    ShowVerses(fontSize: $fontSize, pageNumber: index, page: quranPageV2)
-                        .onAppear(perform: {
+                    if let chapters = vm.chapterArray?.chapters{
+
+                    ZStack{
                             
-                            prevJuzNumber = juzNumber
-                            
-                            juzNumber = quranPageV2.verses[0].juzNumber
-                            
-                            if let chapters = vm.chapterArray?.chapters{
-                                
-                                prevChapterName = chapterName
-                                
-                                chapterName = chapters[quranPageV2.verses[0].chapterID-1].nameArabic
-                                
+//                            Color.gray
+//                                .opacity(0.3)
+//                                .zIndex(-10)
+//                            .navigationTitle("\(chapters[quranPageV2.verses[0].chapterID-1].nameArabic)")
+                        
+                        ShowVerses(fontSize: $fontSize, pageNumber: index, page: quranPageV2)
+                            .overlay {
+                                Text("\(quranPageV2.verses[0].pageNumber)")
+                                    .font(.title3)
+                                    .bold()
+                                    .foregroundColor(.white)
+                                    .padding(.horizontal, 10)
+                                    .background(
+                                        Capsule(style: .circular)
+                                            .fill(Color.gray)
+                                        
+                                    )
+                                    .padding(50)
+                                    .padding(.bottom, 40)
+                                    .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height, alignment: .bottomTrailing)
                             }
-                        })
-                        .onDisappear(perform: {
+//                            .tag(index)
                             
-//                            if(chapters[quranPageV2.verses[0].chapterID-1] != chapterName){
-//                                chapterName = prevChapterName
-//
-//                            }
-//                            chapterName = prevChapterName
-//                            if(quranPageV2.verses[0].juzNumber != juzNumber){
-//                                juzNumber = prevJuzNumber
-//                            }
-//                            juzNumber = prevJuzNumber
-                        })
-                       
-                        .overlay {
-                            Text("\(quranPageV2.verses[0].pageNumber)")
-                                .font(.title3)
-                                .bold()
-                                .foregroundColor(.white)
-                                .padding(.horizontal, 10)
-                                .background(
-                                    Capsule(style: .circular)
-                                        .fill(Color.gray)
-                                    
-                                )
-                                .padding(50)
-                                .padding(.bottom, 40)
-                                .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height, alignment: .bottomTrailing)
+        
                         }.tag(index)
+                            .navigationBarTitleDisplayMode(.inline)
+                            .toolbar {
+                            ToolbarItem(placement: .principal) {
+                                HStack {
+                                    Text("الجزء \(quranPageV2.verses[0].juzNumber)")
+                                    Spacer()
+                                    Text("\(chapters[quranPageV2.verses[0].chapterID-1].nameArabic)")
+                                }
+                            }
+                        }
+                    }
                 }
                 
-        //                                if(index != 603){
-        //                                    Button("go to next page") {
-        //                                        pageNumber = index+1
-        //                                    }
-        //                                }
+                
+//                                if(index != 603){
+//                                    Button("go to next page") {
+//                                        pageNumber = index+1
+//                                    }
+//                                }
                 
      
             }.tabViewStyle(PageTabViewStyle(indexDisplayMode: .never))
                 .environment(\.layoutDirection, .rightToLeft)
                 .ignoresSafeArea(edges: .bottom)
                 .toolbar(content: {
+
                     
-                    if(!showToolBar){
-                        ToolbarItem(placement: .topBarLeading) {
-                            Text("الجزء \(juzNumber)")
-                        }
-                        ToolbarItem(placement: .topBarTrailing) {
-                            Text("\(chapterName)")
-                        }
-                    }else{
+                    if(showToolBar){
 //                        ToolbarItem(placement: .topBarLeading) {
 //                            Image(systemName: "gear")
 //                        }
-                   
+               
 
                         ToolbarItem(placement: .topBarTrailing) {
                             menuFontSize()
@@ -116,7 +103,7 @@ struct verseByVerseView: View {
 //                        ToolbarItem(placement: .bottomBar) {
 //                            ScrollView {
 //                                HStack(spacing: 10) {
-//                                    
+//
 //                                }
 //                            }
 //                        }
@@ -127,6 +114,7 @@ struct verseByVerseView: View {
                     showToolBar.toggle()
                 }
         }.environment(\.layoutDirection, .rightToLeft)
+        
 
     }
     
@@ -168,7 +156,7 @@ struct verseByVerseView: View {
 
 #Preview {
    
-    verseByVerseView(pageNumber: 1)
+    verseByVerseView(pageNumber: 1 )
 }
 
 struct ShowVerses: View {
