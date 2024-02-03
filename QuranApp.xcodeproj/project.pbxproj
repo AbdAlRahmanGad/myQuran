@@ -5681,7 +5681,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 8BFBD8DD2B66C4E5000B597C /* Build configuration list for PBXProject "QuranApp" */;
+			buildConfigurationList = 8BFBD8DD2B66C4E5000B597C /* Build configuration list for PBXProject "QuranApp3" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -7730,7 +7730,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8BFBD8DD2B66C4E5000B597C /* Build configuration list for PBXProject "QuranApp" */ = {
+		8BFBD8DD2B66C4E5000B597C /* Build configuration list for PBXProject "QuranApp3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8BFBD8EE2B66C4E8000B597C /* Debug */,
