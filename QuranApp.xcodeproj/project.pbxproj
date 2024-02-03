@@ -3557,7 +3557,7 @@
 		8BF187872B697CE800344D62 /* page475.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = page475.json; sourceTree = "<group>"; };
 		8BF187882B697CE800344D62 /* page15.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = page15.json; sourceTree = "<group>"; };
 		8BF187892B697CE800344D62 /* page249.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = page249.json; sourceTree = "<group>"; };
-		8BF1878A2B697CE800344D62 /* page176.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = page176.json; sourceTree = "<group>"; };
+		8BF1878A2B697CE800344D62 /* page176.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = page176.json; path = /Users/abdogad/Desktop/quranByPages/page176.json; sourceTree = "<absolute>"; };
 		8BF1878B2B697CE800344D62 /* page526.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = page526.json; sourceTree = "<group>"; };
 		8BF1878C2B697CE800344D62 /* page463.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = page463.json; sourceTree = "<group>"; };
 		8BF1878D2B697CE800344D62 /* page199.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = page199.json; sourceTree = "<group>"; };
@@ -3620,7 +3620,7 @@
 		8BF187C62B697CE800344D62 /* page511.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = page511.json; sourceTree = "<group>"; };
 		8BF187C72B697CE800344D62 /* page141.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = page141.json; sourceTree = "<group>"; };
 		8BF187C82B697CE800344D62 /* page268.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = page268.json; sourceTree = "<group>"; };
-		8BF187C92B697CE800344D62 /* page1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = page1.json; sourceTree = "<group>"; };
+		8BF187C92B697CE800344D62 /* page1.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = page1.json; path = ../Desktop/quranByPages/page1.json; sourceTree = SOURCE_ROOT; };
 		8BF187CA2B697CE800344D62 /* page287.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = page287.json; sourceTree = "<group>"; };
 		8BF187CB2B697CE800344D62 /* page63.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = page63.json; sourceTree = "<group>"; };
 		8BF187CC2B697CE800344D62 /* page403.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = page403.json; sourceTree = "<group>"; };
@@ -5662,7 +5662,7 @@
 			dependencies = (
 			);
 			name = QuranApp;
-			productName = "QuranApp";
+			productName = QuranApp;
 			productReference = 8BFBD8E22B66C4E5000B597C /* QuranApp.app */;
 			productType = "com.apple.product-type.application";
 		};
