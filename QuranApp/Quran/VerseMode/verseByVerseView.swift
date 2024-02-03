@@ -10,18 +10,13 @@ import SwiftUI
 struct verseByVerseView: View {
     
     @State var pageNumber: Int
-    
     @State var juzNumber: Int = 1
     @State var chapterName: String = ""
     @State var prevJuzNumber: Int = 1
     @State var prevChapterName: String = ""
     @State var showToolBar: Bool = false
-    
-    
     @State var fontSize: CGFloat = 30
-
     
-
     @StateObject var vm = CodableViewModel()
     
     var body: some View {
@@ -34,6 +29,7 @@ struct verseByVerseView: View {
                     if let chapters = vm.chapterArray?.chapters{
 
                     ZStack{
+                        ///////////////// Theme
                             
 //                            Color.gray
 //                                .opacity(0.3)
@@ -56,8 +52,6 @@ struct verseByVerseView: View {
                                     .padding(.bottom, 40)
                                     .frame(width: UIScreen.main.bounds.width, height: UIScreen.main.bounds.height, alignment: .bottomTrailing)
                             }
-//                            .tag(index)
-                            
         
                         }.tag(index)
                             .navigationBarTitleDisplayMode(.inline)
@@ -92,7 +86,6 @@ struct verseByVerseView: View {
 //                            Image(systemName: "gear")
 //                        }
                
-
                         ToolbarItem(placement: .topBarTrailing) {
                             menuFontSize()
                         }

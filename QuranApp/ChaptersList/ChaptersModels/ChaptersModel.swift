@@ -5,19 +5,12 @@
 //  Created by abdo gad on 28/01/2024.
 
 
-// This file was generated from JSON Schema using quicktype, do not modify it directly.
-// To parse the JSON, add this file to your project and do:
-//
-//   let chapters = try? JSONDecoder().decode(Chapters.self, from: jsonData)
-
 import Foundation
 
-// MARK: - Chapters
 struct Chapters: Codable {
     let chapters: [Chapter]
 }
 
-// MARK: - Chapter
 struct Chapter: Codable, Identifiable {
     let id: Int
     let revelationPlace: RevelationPlace
@@ -47,7 +40,6 @@ enum RevelationPlace: String, Codable {
     case makkah = "makkah"
 }
 
-// MARK: - TranslatedName
 struct TranslatedName: Codable {
     let languageName: LanguageName
     let name: String

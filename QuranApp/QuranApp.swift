@@ -12,7 +12,6 @@ struct QuranApp: App {
     var body: some Scene {
         WindowGroup {
             ChaptersList()
-//            verseByVerseView(pageNumber: 1)
         }
     }
 }

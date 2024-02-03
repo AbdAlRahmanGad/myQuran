@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8BA808E02B699DE3002C4CEC /* arbfonts_Qurraan_sora.otf in Resources */ = {isa = PBXBuildFile; fileRef = 8BA808DF2B699DE2002C4CEC /* arbfonts_Qurraan_sora.otf */; };
 		8BB0CB582B6849DE00AF3FB5 /* QuranPagesV2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BB0CB572B6849DE00AF3FB5 /* QuranPagesV2.swift */; };
 		8BF17E652B685E0900344D62 /* QCF4557-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BF17C082B685DE500344D62 /* QCF4557-Regular.ttf */; };
 		8BF17E662B685E0900344D62 /* QCF4576-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BF17C092B685DE600344D62 /* QCF4576-Regular.ttf */; };
@@ -614,8 +613,6 @@
 		8BF180BF2B685E0900344D62 /* QCF4485-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BF17E622B685E0900344D62 /* QCF4485-Regular.ttf */; };
 		8BF180C02B685E0900344D62 /* QCF4099-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BF17E632B685E0900344D62 /* QCF4099-Regular.ttf */; };
 		8BF180C12B685E0900344D62 /* QCF4543-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BF17E642B685E0900344D62 /* QCF4543-Regular.ttf */; };
-		8BF180C42B686E5F00344D62 /* UthmanicHafs_V22.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BF180C22B686E5F00344D62 /* UthmanicHafs_V22.ttf */; };
-		8BF180C52B686E5F00344D62 /* uthmanic_hafs_v22.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BF180C32B686E5F00344D62 /* uthmanic_hafs_v22.ttf */; };
 		8BF183262B6965F200344D62 /* QCF2553.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BF180C92B6965EF00344D62 /* QCF2553.ttf */; };
 		8BF183272B6965F200344D62 /* QCF2235.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BF180CA2B6965EF00344D62 /* QCF2235.ttf */; };
 		8BF183282B6965F200344D62 /* QCF2221.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8BF180CB2B6965EF00344D62 /* QCF2221.ttf */; };
@@ -1838,7 +1835,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8BA808DF2B699DE2002C4CEC /* arbfonts_Qurraan_sora.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = arbfonts_Qurraan_sora.otf; sourceTree = "<group>"; };
 		8BB0C69B2B68394500AF3FB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8BB0CB572B6849DE00AF3FB5 /* QuranPagesV2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranPagesV2.swift; sourceTree = "<group>"; };
 		8BF17C082B685DE500344D62 /* QCF4557-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "QCF4557-Regular.ttf"; sourceTree = "<group>"; };
@@ -2446,8 +2442,6 @@
 		8BF17E622B685E0900344D62 /* QCF4485-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "QCF4485-Regular.ttf"; sourceTree = "<group>"; };
 		8BF17E632B685E0900344D62 /* QCF4099-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "QCF4099-Regular.ttf"; sourceTree = "<group>"; };
 		8BF17E642B685E0900344D62 /* QCF4543-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "QCF4543-Regular.ttf"; sourceTree = "<group>"; };
-		8BF180C22B686E5F00344D62 /* UthmanicHafs_V22.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = UthmanicHafs_V22.ttf; sourceTree = "<group>"; };
-		8BF180C32B686E5F00344D62 /* uthmanic_hafs_v22.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = uthmanic_hafs_v22.ttf; sourceTree = "<group>"; };
 		8BF180C92B6965EF00344D62 /* QCF2553.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = QCF2553.ttf; sourceTree = "<group>"; };
 		8BF180CA2B6965EF00344D62 /* QCF2235.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = QCF2235.ttf; sourceTree = "<group>"; };
 		8BF180CB2B6965EF00344D62 /* QCF2221.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = QCF2221.ttf; sourceTree = "<group>"; };
@@ -3686,16 +3680,16 @@
 			children = (
 				8BB0C6942B682DF800AF3FB5 /* Fonts */,
 				8BB0C6932B682C8D00AF3FB5 /* VerseMode */,
-				8BB0C6922B682C7A00AF3FB5 /* FullPage */,
+				8BB0C6922B682C7A00AF3FB5 /* FullPageMode */,
 			);
 			path = Quran;
 			sourceTree = "<group>";
 		};
-		8BB0C6922B682C7A00AF3FB5 /* FullPage */ = {
+		8BB0C6922B682C7A00AF3FB5 /* FullPageMode */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = FullPage;
+			path = FullPageMode;
 			sourceTree = "<group>";
 		};
 		8BB0C6932B682C8D00AF3FB5 /* VerseMode */ = {
@@ -3709,9 +3703,6 @@
 		8BB0C6942B682DF800AF3FB5 /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				8BA808DF2B699DE2002C4CEC /* arbfonts_Qurraan_sora.otf */,
-				8BF180C32B686E5F00344D62 /* uthmanic_hafs_v22.ttf */,
-				8BF180C22B686E5F00344D62 /* UthmanicHafs_V22.ttf */,
 				8BF17D0F2B685DF200344D62 /* QCF_FullSurah_HD-Regular.ttf */,
 				8BF180C82B6965EF00344D62 /* mushaf-v2 */,
 				8BF17C072B685DC700344D62 /* FontV4 */,
@@ -5901,7 +5892,6 @@
 				8BF17FC82B685E0900344D62 /* QCF4451-Regular.ttf in Resources */,
 				8BF185602B6965F300344D62 /* QCF2549.ttf in Resources */,
 				8BF188C62B697CE800344D62 /* page484.json in Resources */,
-				8BA808E02B699DE3002C4CEC /* arbfonts_Qurraan_sora.otf in Resources */,
 				8BF188182B697CE800344D62 /* page355.json in Resources */,
 				8BF185562B6965F300344D62 /* QCF2171.ttf in Resources */,
 				8BF184D32B6965F300344D62 /* QCF2270.ttf in Resources */,
@@ -6587,7 +6577,6 @@
 				8BF184C62B6965F300344D62 /* QCF2463.ttf in Resources */,
 				8BF1896E2B697CE900344D62 /* page65.json in Resources */,
 				8BF17F072B685E0900344D62 /* QCF4122-Regular.ttf in Resources */,
-				8BF180C52B686E5F00344D62 /* uthmanic_hafs_v22.ttf in Resources */,
 				8BF184052B6965F200344D62 /* QCF2137.ttf in Resources */,
 				8BF188842B697CE800344D62 /* page456.json in Resources */,
 				8BF183C02B6965F200344D62 /* QCF2379.ttf in Resources */,
@@ -6614,7 +6603,6 @@
 				8BF188732B697CE800344D62 /* page440.json in Resources */,
 				8BF180012B685E0900344D62 /* QCF4201-Regular.ttf in Resources */,
 				8BF180BC2B685E0900344D62 /* QCF4531-Regular.ttf in Resources */,
-				8BF180C42B686E5F00344D62 /* UthmanicHafs_V22.ttf in Resources */,
 				8BF17F7B2B685E0900344D62 /* QCF4013-Regular.ttf in Resources */,
 				8BF180A22B685E0900344D62 /* QCF4149-Regular.ttf in Resources */,
 				8BF189812B697CE900344D62 /* page203.json in Resources */,

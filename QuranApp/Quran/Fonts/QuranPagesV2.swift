@@ -4,10 +4,6 @@
 //
 //  Created by abdo gad on 29/01/2024.
 //
-// This file was generated from JSON Schema using quicktype, do not modify it directly.
-// To parse the JSON, add this file to your project and do:
-//
-//   let quranPageV2 = try? JSONDecoder().decode(QuranPageV2.self, from: jsonData)
 
 import Foundation
 
@@ -21,7 +17,6 @@ struct QuranPageV2: Codable{
     let pagination: Pagination
 }
 
-// MARK: - Pagination
 struct Pagination: Codable {
     let perPage, currentPage: Int
     let nextPage: Int?
@@ -36,7 +31,6 @@ struct Pagination: Codable {
     }
 }
 
-// MARK: - Verse
 struct Verse: Codable, Identifiable {
     let id, verseNumber: Int
     let verseKey: String
@@ -67,7 +61,6 @@ struct Verse: Codable, Identifiable {
     }
 }
 
-// MARK: - Word
 struct Word: Codable, Identifiable {
     let id, position: Int
     let audioURL: String?
@@ -100,7 +93,6 @@ enum CharTypeName: String, Codable {
     case word = "word"
 }
 
-// MARK: - Translation
 struct Translation: Codable {
     let text: String?
     let languageName: LanguageName

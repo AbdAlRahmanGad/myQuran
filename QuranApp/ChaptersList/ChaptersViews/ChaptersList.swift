@@ -8,13 +8,7 @@
 import SwiftUI
 
 struct ChaptersList: View {
-    
-//    let Chapters : [String] = [
-//    "الفاتحة", "البقرة", "آل عمران"
-//    ]
-//    let Juz : [Int] = [1,1,3]
-//    let juz = 0
-//    
+
     @StateObject var vm = CodableViewModel()
     
     var body: some View {
@@ -29,7 +23,6 @@ struct ChaptersList: View {
                     ///if not do not call header
                     ///
                     /// State -> if selected borderColor and numberColor change <- ternary operator
-                    
                     
                     ForEach(chapters) { chapter in
                         //                Section (
@@ -69,7 +62,6 @@ struct listOfChapterView: View {
                     .bold()
                 
                 Text("رقمها \(chapter.id) _  آياتها \(chapter.versesCount) _ \(chapter.revelationPlace.rawValue == "madinah" ? "مدنية" : "مكية")")
-                
                     .foregroundStyle(.gray)
                     .font(.caption)
                     .bold()
@@ -77,31 +69,16 @@ struct listOfChapterView: View {
             }
             
             Spacer()
-
-            
-            
-            //            ZStack(alignment: .center) {
-            //
-            //                Circle()
-            //                    .frame(width: 40, height: 40, alignment: .center)
-            //                    .foregroundStyle(.gray)
-                            
-                            
-                            Text("\(chapter.pages[0])")
-                                .frame(width: 40, height: 40, alignment: .center)
-                                .foregroundStyle(Color.white)
-                                .font(.headline)
-            //                    .padding(20)
-                                .background {
-                                    Circle()
-                                        .frame(width: 45, height: 45, alignment: .center)
-                                        .foregroundStyle(.gray)
-                                }
-                            //                .padding()
-                            
-                            
-                          
-            //            }
+                Text("\(chapter.pages[0])")
+                    .frame(width: 40, height: 40, alignment: .center)
+                    .foregroundStyle(Color.white)
+                    .font(.headline)
+                    .background {
+                        Circle()
+                            .frame(width: 45, height: 45, alignment: .center)
+                            .foregroundStyle(.gray)
+                    }
+                        
         }
     }
 }

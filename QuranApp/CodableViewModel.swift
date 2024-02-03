@@ -25,31 +25,20 @@ class CodableViewModel: ObservableObject {
         guard let chapterData = readLocalJSONFile(forName: "ChapterList") else { return }
         self.chapterArray = try? JSONDecoder().decode(Chapters.self, from: chapterData)
         
-        
         guard let juzData = readLocalJSONFile(forName: "JuzList") else { return }
         self.juzArray = try? JSONDecoder().decode(Juzs.self, from: juzData)
+        
         for i in 1..<605 {
             guard let pageV2Data = readLocalJSONFile(forName: "page\(i)") else { return }
-            
 //                    do {
 //                        self.quranPageV2 = try? JSONDecoder().decode(QuranPageV2.self, from: pageV2Data)
 //                    } catch let error {
 //                        print("Error decoding. \(error)")
 //                    }
             self.quranPageV2 = try? JSONDecoder().decode(QuranPageV2.self, from: pageV2Data)
-//            print(quranPageV2?.verses[0].pageNumber)
-
             self.pagesV2.append(self.quranPageV2!)
-//            print(pagesV2[0])
-
         }
 
-
-
-
-        
-
-        
     }
     
     func readLocalJSONFile(forName name: String) -> Data? {
