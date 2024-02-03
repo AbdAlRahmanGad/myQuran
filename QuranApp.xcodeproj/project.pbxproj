@@ -1825,7 +1825,7 @@
 		8BF18A472B697CE900344D62 /* page585.json in Resources */ = {isa = PBXBuildFile; fileRef = 8BF187EB2B697CE800344D62 /* page585.json */; };
 		8BF18A482B697CE900344D62 /* page356.json in Resources */ = {isa = PBXBuildFile; fileRef = 8BF187EC2B697CE800344D62 /* page356.json */; };
 		8BF18A492B697CE900344D62 /* page213.json in Resources */ = {isa = PBXBuildFile; fileRef = 8BF187ED2B697CE800344D62 /* page213.json */; };
-		8BFBD8E62B66C4E5000B597C /* QuranTest_11App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFBD8E52B66C4E5000B597C /* QuranTest_11App.swift */; };
+		8BFBD8E62B66C4E5000B597C /* QuranApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFBD8E52B66C4E5000B597C /* QuranApp.swift */; };
 		8BFBD8E82B66C4E5000B597C /* verseByVerseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8BFBD8E72B66C4E5000B597C /* verseByVerseView.swift */; };
 		8BFBD8EA2B66C4E8000B597C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BFBD8E92B66C4E8000B597C /* Assets.xcassets */; };
 		8BFBD8ED2B66C4E8000B597C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8BFBD8EC2B66C4E8000B597C /* Preview Assets.xcassets */; };
@@ -3657,8 +3657,8 @@
 		8BF187EB2B697CE800344D62 /* page585.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = page585.json; sourceTree = "<group>"; };
 		8BF187EC2B697CE800344D62 /* page356.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = page356.json; sourceTree = "<group>"; };
 		8BF187ED2B697CE800344D62 /* page213.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = page213.json; sourceTree = "<group>"; };
-		8BFBD8E22B66C4E5000B597C /* QuranTest-11.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "QuranTest-11.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		8BFBD8E52B66C4E5000B597C /* QuranTest_11App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranTest_11App.swift; sourceTree = "<group>"; };
+		8BFBD8E22B66C4E5000B597C /* QuranApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuranApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8BFBD8E52B66C4E5000B597C /* QuranApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuranApp.swift; sourceTree = "<group>"; };
 		8BFBD8E72B66C4E5000B597C /* verseByVerseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = verseByVerseView.swift; sourceTree = "<group>"; };
 		8BFBD8E92B66C4E8000B597C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8BFBD8EC2B66C4E8000B597C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -5583,7 +5583,7 @@
 		8BFBD8E32B66C4E5000B597C /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				8BFBD8E22B66C4E5000B597C /* QuranTest-11.app */,
+				8BFBD8E22B66C4E5000B597C /* QuranApp.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -5595,7 +5595,7 @@
 				8BFBD9032B66D8F7000B597C /* CodableViewModel.swift */,
 				8BB0C6912B682C6D00AF3FB5 /* Quran */,
 				8BFBD8F52B66CD70000B597C /* ChaptersList */,
-				8BFBD8E52B66C4E5000B597C /* QuranTest_11App.swift */,
+				8BFBD8E52B66C4E5000B597C /* QuranApp.swift */,
 				8BFBD8E92B66C4E8000B597C /* Assets.xcassets */,
 				8BFBD8EB2B66C4E8000B597C /* Preview Content */,
 			);
@@ -5649,9 +5649,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		8BFBD8E12B66C4E5000B597C /* QuranTest-11 */ = {
+		8BFBD8E12B66C4E5000B597C /* QuranApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 8BFBD8F02B66C4E8000B597C /* Build configuration list for PBXNativeTarget "QuranTest-11" */;
+			buildConfigurationList = 8BFBD8F02B66C4E8000B597C /* Build configuration list for PBXNativeTarget "QuranApp" */;
 			buildPhases = (
 				8BFBD8DE2B66C4E5000B597C /* Sources */,
 				8BFBD8DF2B66C4E5000B597C /* Frameworks */,
@@ -5661,9 +5661,9 @@
 			);
 			dependencies = (
 			);
-			name = "QuranTest-11";
-			productName = "QuranTest-11";
-			productReference = 8BFBD8E22B66C4E5000B597C /* QuranTest-11.app */;
+			name = QuranApp;
+			productName = "QuranApp";
+			productReference = 8BFBD8E22B66C4E5000B597C /* QuranApp.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -5681,20 +5681,21 @@
 					};
 				};
 			};
-			buildConfigurationList = 8BFBD8DD2B66C4E5000B597C /* Build configuration list for PBXProject "QuranApp3" */;
+			buildConfigurationList = 8BFBD8DD2B66C4E5000B597C /* Build configuration list for PBXProject "QuranApp" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 8BFBD8D92B66C4E5000B597C;
 			productRefGroup = 8BFBD8E32B66C4E5000B597C /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8BFBD8E12B66C4E5000B597C /* QuranTest-11 */,
+				8BFBD8E12B66C4E5000B597C /* QuranApp */,
 			);
 		};
 /* End PBXProject section */
@@ -7540,7 +7541,7 @@
 				8BB0CB582B6849DE00AF3FB5 /* QuranPagesV2.swift in Sources */,
 				8BFBD8F42B66C6F9000B597C /* ChaptersList.swift in Sources */,
 				8BFBD9042B66D8F7000B597C /* CodableViewModel.swift in Sources */,
-				8BFBD8E62B66C4E5000B597C /* QuranTest_11App.swift in Sources */,
+				8BFBD8E62B66C4E5000B597C /* QuranApp.swift in Sources */,
 				8BFBD9022B66D6D3000B597C /* JuzModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -7674,14 +7675,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"QuranTest-11/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"QuranApp/Preview Content\"";
 				DEVELOPMENT_TEAM = M945F93H28;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "QuranTest-11/Info.plist";
+				INFOPLIST_FILE = QuranApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -7704,14 +7707,16 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"QuranTest-11/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"QuranApp/Preview Content\"";
 				DEVELOPMENT_TEAM = M945F93H28;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "QuranTest-11/Info.plist";
+				INFOPLIST_FILE = QuranApp/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.books";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -7730,7 +7735,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		8BFBD8DD2B66C4E5000B597C /* Build configuration list for PBXProject "QuranApp3" */ = {
+		8BFBD8DD2B66C4E5000B597C /* Build configuration list for PBXProject "QuranApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8BFBD8EE2B66C4E8000B597C /* Debug */,
@@ -7739,7 +7744,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		8BFBD8F02B66C4E8000B597C /* Build configuration list for PBXNativeTarget "QuranTest-11" */ = {
+		8BFBD8F02B66C4E8000B597C /* Build configuration list for PBXNativeTarget "QuranApp" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				8BFBD8F12B66C4E8000B597C /* Debug */,

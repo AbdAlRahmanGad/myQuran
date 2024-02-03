@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct QuranTest_11App: App {
+struct QuranApp: App {
     var body: some Scene {
         WindowGroup {
             ChaptersList()
