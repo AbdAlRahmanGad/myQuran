@@ -2,6 +2,12 @@
 
 A Quran app that simplifies navigation with an index, allowing easy surfing and font size customization.
 
+## Table of Contents
+
+- [Features](#features)
+- [Screenshots](#screenshots)
+- [Roadmap](#roadmap)
+
 ## Features
 
 - [x] Index for easy navigation
