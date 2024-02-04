@@ -7,7 +7,7 @@ A Quran app that simplifies navigation with an index, allowing easy surfing and 
 - [x] Index for easy navigation
 - [x] Font size customization
 
-## ScreemShots
+## ScreenShots
 ### Index
 ![IMG_5173](https://github.com/AbdAlRahmanGad/myQuran/assets/89566409/282aafb3-8d9a-41d3-bdff-da0e5afc8576)
 ### normal view
